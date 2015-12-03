@@ -4,21 +4,23 @@ var AIRBNB_PREFIX = 'https://www.airbnb.com',
     HOSTING_INFO_URL = AIRBNB_PREFIX + '/api/v1/listings',
     USER_REVIEWS_URL = AIRBNB_PREFIX + '/users/review_page',
     DEFAULT_REQUEST_CONFIGS = {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
-      }
+        headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
+            'Accept': 'application/json, text/html',
+            //'Content-Type': 'application/json'
+        }
     },
     DEFAULT_REQUEST_PARAMS = {
-      key: secrets.API_KEY
+        key: secrets.API_KEY
     };
 
 configs = {
-  AIRBNB_PREFIX: AIRBNB_PREFIX,
-  SEARCH_URL: SEARCH_URL,
-  AVAILABILITY_URL: AVAILABILITY_URL,
-  HOSTING_INFO_URL: HOSTING_INFO_URL,
-  USER_REVIEWS_URL: USER_REVIEWS_URL,
-  DEFAULT_REQUEST_CONFIGS: DEFAULT_REQUEST_CONFIGS,
-  DEFAULT_REQUEST_PARAMS: DEFAULT_REQUEST_PARAMS
+    AIRBNB_PREFIX: AIRBNB_PREFIX,
+    SEARCH_URL: SEARCH_URL,
+    AVAILABILITY_URL: AVAILABILITY_URL,
+    HOSTING_INFO_URL: HOSTING_INFO_URL,
+    USER_REVIEWS_URL: USER_REVIEWS_URL,
+    DEFAULT_REQUEST_CONFIGS: DEFAULT_REQUEST_CONFIGS,
+    DEFAULT_REQUEST_PARAMS: DEFAULT_REQUEST_PARAMS
 };
     

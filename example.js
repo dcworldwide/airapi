@@ -228,6 +228,9 @@ airbnb.getInfo(4639847).then(function (info) {
 //    }
 //}
 
+
+
+
 // Get calendar from June to Nov 2015 for hosting ID: 4639847
 airbnb.getCalendar(4639847, {
     month: 6,

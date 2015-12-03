@@ -53,8 +53,17 @@ search = function (options) {
 
                     //console.log(res);
 
+                    let content = res.content;
+
+                    if (content && content.startsWith("{\"results")) {
+                        console.log('sss');
+                        let x = JSON.parse(content);
+                        console.log(x);
+                        content = x.results;
+                    }
+
                     // @see https://github.com/cheeriojs/cheerio. Options from htmlparser2
-                    $ = cheerio.load(res.content, {
+                    $ = cheerio.load(content, {
                         normalizeWhitespace: false,
                         xmlMode: false,
                         decodeEntities: true
