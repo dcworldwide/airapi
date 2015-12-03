@@ -1,6 +1,3 @@
-var secrets = require('./_secrets'),
-    _ = require('lodash');
-
 var AIRBNB_PREFIX = 'https://www.airbnb.com',
     SEARCH_URL = AIRBNB_PREFIX + '/search/search_results',
     AVAILABILITY_URL = AIRBNB_PREFIX + '/api/v2/calendar_months',
@@ -15,7 +12,7 @@ var AIRBNB_PREFIX = 'https://www.airbnb.com',
       key: secrets.API_KEY
     };
 
-module.exports = {
+configs = {
   AIRBNB_PREFIX: AIRBNB_PREFIX,
   SEARCH_URL: SEARCH_URL,
   AVAILABILITY_URL: AVAILABILITY_URL,

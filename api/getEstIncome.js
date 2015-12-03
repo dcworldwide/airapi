@@ -31,7 +31,7 @@ function _hostBusy(day) {
  * @param  {Function} failureCallback - Failure callback to invoke
  * @return {Void} - Estimate income is passed onto callbacks
  */
-function income(availability) {
+income = function(availability) {
   if (!availability) return;
   
   // Process data
@@ -57,5 +57,3 @@ function income(availability) {
 
   return estIncome;  
 }
-
-module.exports = income;

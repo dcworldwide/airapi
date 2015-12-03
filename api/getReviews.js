@@ -1,10 +1,3 @@
-var request = require('request'),
-  _ = require('lodash'),
-  cheerio = require('cheerio'),
-  configs = require('../configs'),
-  serialize = require('../helpers/serialize'),
-  Promise = require('bluebird');
-
 /**
  * Get a list of textual reviews for a given user, as a host or a guest
  * @param  {Number, String} user - User ID
@@ -16,7 +9,7 @@ var request = require('request'),
  *   role: {String}, Either 'guest' or 'host', default to 'host'
  * }
  */
-function getReviews(userId, options) {
+getReviews = function(userId, options) {
   var DEFAULT_REVIEWS_PARAMS = _.assign({}, configs.DEFAULT_REQUEST_PARAMS, {
       page: 1,
       role: 'host'
@@ -61,5 +54,3 @@ function getReviews(userId, options) {
   });
 
 }
-
-module.exports = getReviews;
