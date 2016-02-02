@@ -107,8 +107,8 @@ search = function (options) {
                             listings.push({
 
                                 loc: {
-                                    lat: item.data('lat'),
-                                    lng: item.data('lng'),
+                                    lat: parseFloat(item.data('lat')),
+                                    lng: parseFloat(item.data('lng')),
                                     address: '',
                                     street: '',
                                     city: '',
@@ -118,7 +118,7 @@ search = function (options) {
                                 },
 
                                 resource: {
-                                    id: item.data('id'),
+                                    id: item.data('id').toString(),
                                     url: 'https://www.airbnb.com' + item.data('url'),
                                 },
 
