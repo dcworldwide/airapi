@@ -51,9 +51,9 @@ search = function (options) {
 
                 try {
 
-                    //console.log(res);
-
                     let content = res.content;
+
+                    //console.log(res.content.substring(6000, 12000))
 
                     if (content && content.startsWith("{\"results")) {
                         console.log('sss');
